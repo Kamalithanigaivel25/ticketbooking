@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickTicket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎫 QuickTicket</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#booking">Book Ticket</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="welcome">
+        <h2>Book Your Ticket</h2>
+        <p>Simple and fast ticket booking</p>
+    </section>
+
+    <section id="booking" class="booking">
+
+        <h2>Ticket Booking</h2>
+
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Choose Event</label>
+
+        <select id="event">
+            <option value="Movie">Movie - ₹150</option>
+            <option value="Bus">Bus - ₹300</option>
+            <option value="Concert">Concert - ₹500</option>
+        </select>
+
+        <label>Number of Tickets</label>
+        <input type="number" id="tickets" min="1" value="1">
+
+        <button onclick="bookTicket()">Book Ticket</button>
+
+        <p id="result"></p>
+
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 QuickTicket</p>
+        <p>Contact: quickticket@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
